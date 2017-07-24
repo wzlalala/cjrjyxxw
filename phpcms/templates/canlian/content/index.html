@@ -1,0 +1,476 @@
+{template "content","header"}
+
+<div class="index-column-1">
+    <div class="container">
+        <div class="index-column1-contain clearfix">
+            <div class="slider">
+                <div id="slideBox" class="slideBox">
+                    <div class="hd">
+                        <ul><li>1</li><li>2</li><li>3</li></ul>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="{IMG_PATH}canlian/1.jpg" /></a></li>
+                            <li><a href="#" target="_blank"><img src="{IMG_PATH}canlian/2.jpg" /></a></li>
+                            <li><a href="#" target="_blank"><img src="{IMG_PATH}canlian/3.JPG" /></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                    <a class="prev" href="javascript:void(0)"></a>
+                    <a class="next" href="javascript:void(0)"></a>
+
+                </div>
+
+
+
+
+
+            </div>
+            <div class="column">
+                <div class="column-title">
+                    <h2 class="title">{$CATEGORYS[19]['catname']} </h2>
+                    <a href="{$CATEGORYS[19]['url']}" class="more">更多+</a>
+                </div>
+                <div class="news-list">
+                    <ul>
+                    {pc:get sql="SELECT * from v9_news where status=99 and catid in(19) order by id DESC" num="7" return="data"}
+                    {loop $data $r}
+                    <li>
+                        <a href="{$r[url]}" title="{str_cut($r['title'],40)}" target="_blank">
+                            <span class="title">{str_cut($r['title'],40)}</span>
+                            <span class="time">{date('m-d',$r[inputtime])}</span>
+                        </a>
+                    </li>
+                    {/loop}
+                    {/pc}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="link-contain">
+                <a href="">
+                    <img src="{IMG_PATH}canlian/btna.jpg" alt=""/>
+                </a>
+                <a href="">
+                    <img src="{IMG_PATH}canlian/btn1.jpg" alt=""/>
+                </a>
+                <a href="" style="margin-bottom: 0">
+                    <img src="{IMG_PATH}canlian/btn2.jpg" alt=""/>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="index-column-2">
+    <div class="container">
+        <div class="index-column2-contain clearfix">
+            <div class="column" style="margin-left:0;">
+                <div class="column-title">
+                    <h2 class="title">{$CATEGORYS[20]['catname']} </h2>
+                    <a href="{$CATEGORYS[20]['url']}" class="more">更多+</a>
+                </div>
+                <div class="news-list">
+                    <ul>
+                        {pc:get sql="SELECT * from v9_news where status=99 and catid in(20) order by id DESC" num="7" return="data"}
+                        {loop $data $r}
+                        <li>
+                            <a href="{$r[url]}" title="{str_cut($r['title'],40)}" target="_blank">
+                                <span class="title">{str_cut($r['title'],40)}</span>
+                                <span class="time">{date('m-d',$r[inputtime])}</span>
+                            </a>
+                        </li>
+                        {/loop}
+                        {/pc}
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-title">
+                    <h2 class="title">{$CATEGORYS[11]['catname']} </h2>
+                    <a href="{$CATEGORYS[11]['url']}" class="more">更多+</a>
+                </div>
+                <div class="news-list">
+                    <ul>
+                        {pc:get sql="SELECT * from v9_news where status=99 and catid in(11) order by id DESC" num="7" return="data"}
+                        {loop $data $r}
+                        <li>
+                            <a href="{$r[url]}" title="{str_cut($r['title'],40)}" target="_blank">
+                                <span class="title">{str_cut($r['title'],40)}</span>
+                                <span class="time">{date('m-d',$r[inputtime])}</span>
+                            </a>
+                        </li>
+                        {/loop}
+                        {/pc}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="link-contain">
+                <a href=""> <img src="{IMG_PATH}canlian/btn4.jpg" alt=""/></a>
+                <a href=""> <img src="{IMG_PATH}canlian/btn5.jpg" alt=""/></a>
+                <a href="" style="margin-bottom: 0"> <img src="{IMG_PATH}canlian/btn6.jpg" alt=""/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="index-special">
+    <div class="container">
+        <img src="{IMG_PATH}canlian/ad.jpg" alt=""/>
+    </div>
+</div>
+<div class="index-column-4">
+    <div class="container">
+        <div class="index-column4-contain clearfix">
+            <div class="column" style="margin-left:0;">
+                <div class="column-title">
+                    <h2 class="title">{$CATEGORYS[12]['catname']} </h2>
+                    <a href="{$CATEGORYS[12]['url']}" class="more">更多+</a>
+                </div>
+                <div class="news-list">
+                    <dl class="img-list">
+                        <dt><span class="img"><img src="{$CATEGORYS[12]['image']}" alt=""></span></dt>
+                        {pc:get sql="SELECT * from v9_news where status=99 and catid in(12) and posids in(1) order by id DESC" num="2" return="data"}
+                        {loop $data $r}
+                        <dd>
+                            <a href="{$r[url]}" title="{str_cut($r['title'],40)}" target="_blank">
+                                <span class="title">{str_cut($r['title'],40)}</span>
+                            </a>
+                        </dd>
+                        {/loop}
+                        {/pc}
+                    </dl>
+                    <ul>
+                        {pc:get sql="SELECT * from v9_news where status=99 and catid in(12) and posids in(0) order by id DESC" num="2" return="data"}
+                        {loop $data $r}
+                        <li>
+                            <a href="{$r[url]}" title="{str_cut($r['title'],40)}" target="_blank">
+                                <span class="title">{str_cut($r['title'],40)}</span>
+                                <span class="time">{date('m-d',$r[inputtime])}</span>
+                            </a>
+                        </li>
+                        {/loop}
+                        {/pc}
+
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-title">
+                    <h2 class="title">{$CATEGORYS[13]['catname']} </h2>
+                    <a href="{$CATEGORYS[13]['url']}" class="more">更多+</a>
+                </div>
+                <div class="news-list">
+                    <dl class="img-list">
+                        <dt><span class="img"><img src="{$CATEGORYS[13]['image']}" alt=""></span></dt>
+                        {pc:get sql="SELECT * from v9_news where status=99 and catid in(13) and posids in(1) order by id DESC" num="2" return="data"}
+                        {loop $data $r}
+                        <dd>
+                            <a href="{$r[url]}" title="{str_cut($r['title'],40)}" target="_blank">
+                                <span class="title">{str_cut($r['title'],40)}</span>
+                            </a>
+                        </dd>
+                        {/loop}
+                        {/pc}
+                    </dl>
+                    <ul>
+                        {pc:get sql="SELECT * from v9_news where status=99 and catid in(13) and posids in(0) order by id DESC" num="2" return="data"}
+                        {loop $data $r}
+                        <li>
+                            <a href="{$r[url]}" title="{str_cut($r['title'],40)}" target="_blank">
+                                <span class="title">{str_cut($r['title'],40)}</span>
+                                <span class="time">{date('m-d',$r[inputtime])}</span>
+                            </a>
+                        </li>
+                        {/loop}
+                        {/pc}
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="index-file-column">
+                <div class="column-title">
+                    <h2 class="title title2">职业鉴定</h2>
+                </div>
+                <div class="file-list">
+                    <a href="">
+                        <span class="title">职业鉴定申请书</span>
+                        <span class="down">下载</span>
+                    </a>
+                    <a href="">
+                        <span class="title">职业鉴定表</span>
+                        <span class="down">下载</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="index-column-4">
+    <div class="container">
+        <div class="index-column4-contain clearfix">
+            <div class="column" style="margin-left:0;">
+                <div class="column-title">
+                    <h2 class="title">{$CATEGORYS[14]['catname']} </h2>
+                    <a href="{$CATEGORYS[14]['url']}" class="more">更多+</a>
+                </div>
+                <div class="news-list">
+                    <dl class="img-list">
+                        <dt><span class="img"><img src="{$CATEGORYS[14]['image']}" alt=""></span></dt>
+                        {pc:get sql="SELECT * from v9_news where status=99 and catid in(14) and posids in(1) order by id DESC" num="2" return="data"}
+                        {loop $data $r}
+                        <dd>
+                            <a href="{$r[url]}" title="{str_cut($r['title'],40)}" target="_blank">
+                                <span class="title">{str_cut($r['title'],40)}</span>
+                            </a>
+                        </dd>
+                        {/loop}
+                        {/pc}
+                    </dl>
+                    <ul>
+                        {pc:get sql="SELECT * from v9_news where status=99 and catid in(14) and posids in(0) order by id DESC" num="2" return="data"}
+                        {loop $data $r}
+                        <li>
+                            <a href="{$r[url]}" title="{str_cut($r['title'],40)}" target="_blank">
+                                <span class="title">{str_cut($r['title'],40)}</span>
+                                <span class="time">{date('m-d',$r[inputtime])}</span>
+                            </a>
+                        </li>
+                        {/loop}
+                        {/pc}
+
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-title">
+                    <h2 class="title">{$CATEGORYS[15]['catname']} </h2>
+                    <a href="{$CATEGORYS[15]['url']}" class="more">更多+</a>
+                </div>
+                <div class="news-list">
+                    <dl class="img-list">
+                        <dt><span class="img"><img src="{$CATEGORYS[15]['image']}" alt=""></span></dt>
+                        {pc:get sql="SELECT * from v9_news where status=99 and catid in(15) and posids in(1) order by id DESC" num="3" return="data"}
+                        {loop $data $r}
+                        <dd>
+                            <a href="{$r[url]}" title="{str_cut($r['title'],40)}" target="_blank">
+                                <span class="title">{str_cut($r['title'],40)}</span>
+                            </a>
+                        </dd>
+                        {/loop}
+                        {/pc}
+                    </dl>
+                    <ul>
+                        {pc:get sql="SELECT * from v9_news where status=99 and catid in(15) and posids in(0) order by id DESC" num="2" return="data"}
+                        {loop $data $r}
+                        <li>
+                            <a href="{$r[url]}" title="{str_cut($r['title'],40)}" target="_blank">
+                                <span class="title">{str_cut($r['title'],40)}</span>
+                                <span class="time">{date('m-d',$r[inputtime])}</span>
+                            </a>
+                        </li>
+                        {/loop}
+                        {/pc}
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="index-file-column">
+                <div class="column-title">
+                    <h2 class="title title2">资料下载</h2>
+                </div>
+                <div class="file-list">
+                    <a href="">
+                        <span class="title">求职申请表</span>
+                        <span class="down">下载</span>
+                    </a>
+                    <a href="">
+                        <span class="title">招聘申请表</span>
+                        <span class="down">下载</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="index-column-5">
+    <div class="container">
+        <div class="index-column5-contain">
+            <div class="column-title">
+                <h2 class="title">最新求职信息</h2><!--
+                <a href="" class="more">更多+</a>-->
+            </div>
+            <div class="table-list clearfix">
+                <dl>
+                    <dt>
+                        <span class="name">姓名</span>
+                        <span class="sex">性别</span>
+                        <span class="wenhua">文化程度</span>
+                        <span class="leixing">残疾类别</span>
+                        <span class="zhiwei">欲求职位</span>
+                        <span class="time">创建时间</span>
+                    </dt>
+                    {pc:get sql="select * from v9_cjrjbxx,v9_cjrqzxx  where v9_cjrjbxx.id=v9_cjrqzxx.cjrid order by v9_cjrqzxx.xgsj DESC" num="10" return="data"}
+                    <?php
+                  foreach ($data as $k=>$v){
+                        $data[$k]['xm'] = substr_cut($data[$k]['xm']);
+                    }
+                    function substr_cut($user_name){
+
+
+                            //获取字符串长度
+                            $strlen = mb_strlen($user_name, 'utf-8');
+                            //如果字符创长度小于2，不做任何处理
+                            if($strlen<2){
+                                return $user_name;
+                            }else{
+                                //mb_substr — 获取字符串的部分
+                                $firstStr = mb_substr($user_name, 0, 1, 'utf-8');
+                                $lastStr = mb_substr($user_name, -1, 1, 'utf-8');
+                                //str_repeat — 重复一个字符串
+                                return $strlen == 2 ? $firstStr . str_repeat('*', mb_strlen($user_name, 'utf-8') - 1) : $firstStr . str_repeat("*", $strlen - 2) . $lastStr;
+                            }
+                    }
+                   ?>
+                    {loop $data $r}
+                    <dd>
+                        <a href="?m=applyforjob&c=index&a=show&id=<?php echo $r['id']?>&cjrid=<?php echo $r['cjrid']?>">
+                            <span class="name">{$r['xm']}</span>
+                            <span class="sex">{$r['xb']}</span>
+                            <span class="wenhua">{$r['whcd']}</span>
+                            <span class="leixing">{$r['cjlb']}</span>
+                            <span class="zhiwei">{$r['qzgw']}</span>
+                            <span class="time">{date('m-d H:m',$r['xgsj'])}</span>
+                        </a>
+                    </dd>
+
+                    {/loop}
+                    {/pc}
+                </dl>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--
+<div class="index-column-5">
+    <div class="container">
+        <div class="index-column5-contain">
+            <div class="column-title">
+                <h2 class="title">最新招聘信息</h2>
+                <a href="" class="more">更多+</a>
+            </div>
+            <div class="table-list clearfix">
+                <dl>
+                    <dt>
+                        <span class="dwmc">单位名称</span>
+                        <span class="zpgw">招聘岗位</span>
+                        <span class="zprs">招聘人数</span>
+                        <span class="gzdy">工资待遇</span>
+                        <span class="ly">来源</span>
+                        <span class="fbsj">发布时间</span>
+                    </dt>
+                    <dd>
+                        <a href="">
+                            <span class="dwmc">武汉航天远景科技有限公司</span>
+                            <span class="zpgw">数据作业员</span>
+                            <span class="zprs">10人</span>
+                            <span class="gzdy">6000</span>
+                            <span class="ly">91job</span>
+                            <span class="fbsj">2017-7-16 20:54</span>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="">
+                            <span class="dwmc">河南进出口物流有限公司</span>
+                            <span class="zpgw">跟单员</span>
+                            <span class="zprs">5人</span>
+                            <span class="gzdy">4000</span>
+                            <span class="ly">智联</span>
+                            <span class="fbsj">2017-6-2 19:21</span>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="">
+                            <span class="dwmc">武汉航天远景科技有限公司</span>
+                            <span class="zpgw">数据作业员</span>
+                            <span class="zprs">10人</span>
+                            <span class="gzdy">6000</span>
+                            <span class="ly">91job</span>
+                            <span class="fbsj">2017-7-16 20:54</span>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="">
+                            <span class="dwmc">河南进出口物流有限公司</span>
+                            <span class="zpgw">跟单员</span>
+                            <span class="zprs">5人</span>
+                            <span class="gzdy">4000</span>
+                            <span class="ly">智联</span>
+                            <span class="fbsj">2017-6-2 19:21</span>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="">
+                            <span class="dwmc">武汉航天远景科技有限公司</span>
+                            <span class="zpgw">数据作业员</span>
+                            <span class="zprs">10人</span>
+                            <span class="gzdy">6000</span>
+                            <span class="ly">91job</span>
+                            <span class="fbsj">2017-7-16 20:54</span>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="">
+                            <span class="dwmc">河南进出口物流有限公司</span>
+                            <span class="zpgw">跟单员</span>
+                            <span class="zprs">5人</span>
+                            <span class="gzdy">4000</span>
+                            <span class="ly">智联</span>
+                            <span class="fbsj">2017-6-2 19:21</span>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="">
+                            <span class="dwmc">武汉航天远景科技有限公司</span>
+                            <span class="zpgw">数据作业员</span>
+                            <span class="zprs">10人</span>
+                            <span class="gzdy">6000</span>
+                            <span class="ly">91job</span>
+                            <span class="fbsj">2017-7-16 20:54</span>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="">
+                            <span class="dwmc">河南进出口物流有限公司</span>
+                            <span class="zpgw">跟单员</span>
+                            <span class="zprs">5人</span>
+                            <span class="gzdy">4000</span>
+                            <span class="ly">智联</span>
+                            <span class="fbsj">2017-6-2 19:21</span>
+                        </a>
+                    </dd>
+
+                </dl>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+-->
+
+{template "content","footer"}
+</body>
+<script id="jsID" type="text/javascript">
+
+    jQuery(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true});
+</script>
+
+</html>
+

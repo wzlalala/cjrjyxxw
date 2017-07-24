@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+    <meta name="keywords" content="{$SEO['keyword']}">
+    <meta name="description" content="{$SEO['description']}">
+    <link rel="stylesheet" href="{CSS_PATH}canlian/reset.css"/>
+    <link rel="stylesheet" href="{CSS_PATH}canlian/style.css"/>
+    <script src="{JS_PATH}canlian/jquery1.42.min.js"></script>
+    <script src="{JS_PATH}canlian/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+<div class="head"></div>
+<div class="menu">
+    <div class="container">
+        <ul>
+            <li><a href="{siteurl($siteid)}/">网站首页</a></li>
+            {pc:content action="category" catid="0" num="15" siteid="$siteid" order="listorder ASC"}
+            {loop $data $r}
+             <li><a href="{$r[url]}">{$r[catname]}</a></li>
+            {/loop}
+            {/pc}
+        </ul>
+    </div>
+</div>
+<div class="neck">
+    <div class="container">
+        <div class="neck-container">
+            <div class="welcome"> 您好，欢迎来到郑州市残疾人劳动就业服务中心官方站</div>
+            <div class="time"><iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=1" width="330" height="25" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+            <div class="search">
+                <form action="{APP_PATH}index.php" method="get" target="_blank">
+                    <input type="hidden" name="m" value="search"/>
+                    <input type="hidden" name="c" value="index"/>
+                    <input type="hidden" name="a" value="init"/>
+                    <input type="hidden" name="typeid" value="{$typeid}" id="typeid"/>
+                    <input type="hidden" name="siteid" value="{$siteid}" id="siteid"/>
+                    <input type="submit" value="搜 索" class="search-btn" />
+                    <input type="text" class="search-text" name="q" id="q"/>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

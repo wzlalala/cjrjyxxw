@@ -1,0 +1,626 @@
+@charset "utf-8";
+body {
+  background: #f1f1f1;
+  min-width: 1000px;
+}
+.head {
+  width: 100%;
+  height: 160px;
+  background: url("../../images/canlian/top.jpg") no-repeat center top;
+}
+.menu {
+  height: 40px;
+  background: url("../../images/canlian/menubg.jpg") repeat-x;
+}
+.menu ul {
+  display: block;
+}
+.menu ul li {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  float: left;
+}
+.menu ul li a {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0px 20px;
+  color: #ffffff;
+  font-size: 14px;
+  display: block;
+  font-weight: bold;
+}
+.menu ul li a:hover {
+  background: url("../../images/canlian/menubgc.jpg") repeat-x;
+}
+.neck {
+  margin: 10px 0;
+}
+.neck .neck-container {
+  background: #ffffff;
+  height: 36px;
+  border: 1px solid #efefef;
+  display: block;
+}
+.neck .neck-container .welcome {
+  width: 300px;
+  float: left;
+  padding-left: 10px;
+  line-height: 36px;
+  color: #444444;
+}
+.neck .neck-container .time {
+  width: 360px;
+  float: left;
+  margin-right: 10px;
+  padding-top: 6px;
+}
+.neck .neck-container .search {
+  width: 300px;
+  float: right;
+}
+.neck .neck-container .search .search-text {
+  width: 150px;
+  height: 26px;
+  padding: 1px 2px;
+  border: 1px solid #ededed;
+  background: #ffffff;
+  float: right;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+.neck .neck-container .search .search-btn {
+  background: #135eba;
+  color: #ffffff;
+  font-size: 12px;
+  border: 0;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  float: right;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+.slider {
+  width: 380px;
+  height: 280px;
+  float: left;
+  border: 1px solid #ededed;
+}
+.slideBox {
+  width: 380px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ddd;
+  float: left;
+}
+.slideBox .hd {
+  height: 15px;
+  overflow: hidden;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  z-index: 1;
+}
+.slideBox .hd ul {
+  overflow: hidden;
+  zoom: 1;
+  float: left;
+}
+.slideBox .hd ul li {
+  float: left;
+  margin-right: 2px;
+  width: 15px;
+  height: 15px;
+  line-height: 14px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+}
+.slideBox .hd ul li.on {
+  background: #f00;
+  color: #fff;
+}
+.slideBox .bd {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+.slideBox .bd li {
+  zoom: 1;
+  vertical-align: middle;
+}
+.slideBox .bd img {
+  width: 380px;
+  height: 280px;
+  display: block;
+}
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox .prev,
+.slideBox .next {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  margin-top: -25px;
+  display: block;
+  width: 32px;
+  height: 40px;
+  background: url(../../images/canlian/slider-arrow.png) -110px 5px no-repeat;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+.slideBox .next {
+  left: auto;
+  right: 3%;
+  background-position: 8px 5px;
+}
+.slideBox .prev:hover,
+.slideBox .next:hover {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.slideBox .prevStop {
+  display: none;
+}
+.slideBox .nextStop {
+  display: none;
+}
+.index-column1-contain,
+.index-column2-contain,
+.index-column3-contain {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.column {
+  width: 380px;
+  float: left;
+  height: 280px;
+  border: 1px solid #ededed;
+  margin-left: 10px;
+}
+.column-title {
+  height: 35px;
+  width: 100%;
+  background: url("../../images/canlian/columnBg2.jpg") repeat-x;
+  position: relative;
+  border-bottom: 1px solid #ededed;
+}
+.column-title .title {
+  position: absolute;
+  left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 38px;
+  display: block;
+}
+.column-title .title2 {
+  background: url("../../images/canlian/tbg.png") no-repeat;
+  width: 130px;
+  color: #ffffff;
+  left: 0;
+  text-indent: 10px;
+}
+.column-title .more {
+  font-size: 12px;
+  color: #444444;
+  position: absolute;
+  right: 10px;
+  line-height: 38px;
+  display: inline-block;
+}
+.column-title .more:hover {
+  color: #4193f7;
+}
+.news-list {
+  padding: 10px;
+}
+.news-list .img-list {
+  width: 100%;
+  height: 110px;
+  margin: 10px 0;
+}
+.news-list .img-list dt {
+  border: 1px solid #ededed;
+  width: 170px;
+  height: 100px;
+  padding: 5px;
+  float: left;
+}
+.news-list .img-list dt .img {
+  display: block;
+  width: 170px;
+  height: 100px;
+  overflow: hidden;
+}
+.news-list .img-list dt .img img {
+  width: 170px;
+  height: 100px;
+  transition: .5s;
+}
+.news-list .img-list dt .img img:hover {
+  transform: scale(1.1);
+}
+.news-list .img-list dd {
+  float: right;
+  width: 170px;
+  height: 52px;
+  border-bottom: 1px solid #ededed;
+}
+.news-list .img-list dd a {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  height: 52px;
+  color: #444444;
+  overflow: hidden;
+  display: block;
+}
+.news-list .img-list dd:last-child {
+  border-bottom: 0;
+}
+.news-list li {
+  border-bottom: 1px dashed #efefef;
+  height: 32px;
+  line-height: 32px;
+}
+.news-list li:last-child {
+  border-bottom: 0;
+}
+.news-list li a {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  position: relative;
+}
+.news-list li a .title {
+  color: #444444;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  display: block;
+}
+.news-list li a .time {
+  font-size: 12px;
+  color: #888888;
+  position: absolute;
+  right: 0px;
+}
+.news-list li a:hover .title {
+  color: #135eba;
+  text-decoration: underline;
+}
+.link-contain {
+  width: 185px;
+  height: 270px;
+  float: right;
+  padding: 6px 5px;
+  border: 1px solid #ededed;
+}
+.link-contain a {
+  width: 185px;
+  height: 85px;
+  margin-bottom: 5px;
+  display: block;
+}
+.index-column1-contain .column .news-list li .title,
+.index-column2-contain .column .news-list li .title {
+  width: 280px;
+}
+.index-special {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.index-special .container {
+  height: 100px;
+  display: block;
+}
+.index-column3-contain .column {
+  width: 483px;
+}
+.index-column3-contain .column li .title {
+  width: 400px;
+}
+.index-column4-contain {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.index-column4-contain li .title {
+  width: 300px;
+}
+.index-column5-contain {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.table-list {
+  padding: 10px;
+}
+.table-list dl {
+  width: 100%;
+  float: left;
+  display: block;
+}
+.table-list dt {
+  width: 100%;
+  padding: 2px 0;
+  height: 32px;
+  display: block;
+  float: left;
+  background: #efefef;
+}
+.table-list dt span {
+  color: #444444;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  float: left;
+}
+.table-list dd {
+  float: left;
+  display: block;
+  height: 32px;
+  width: 100%;
+  border-bottom: 1px dashed #ededed;
+}
+.table-list dd a {
+  display: block;
+  width: 100%;
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  transition: .2s;
+}
+.table-list dd a:hover {
+  background: #e4f0ff;
+}
+.table-list dd a:hover span {
+  color: #135eba;
+}
+.table-list dd span {
+  color: #888888;
+  font-weight: normal;
+  font-size: 12px;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  float: left;
+}
+.table-list .name {
+  width: 15%;
+}
+.table-list .sex {
+  width: 15%;
+}
+.table-list .wenhua {
+  width: 15%;
+}
+.table-list .leixing {
+  width: 15%;
+}
+.table-list .zhiwei {
+  width: 25%;
+}
+.table-list .time {
+  width: 15%;
+}
+.table-list .dwmc {
+  width: 30%;
+}
+.table-list .zpgw {
+  width: 15%;
+}
+.table-list .zprs {
+  width: 15%;
+}
+.table-list .gzdy {
+  width: 15%;
+}
+.table-list .ly {
+  width: 15%;
+}
+.table-list .fbsj {
+  width: 10%;
+}
+.flink {
+  margin-bottom: 10px;
+}
+.flink .flink-con {
+  background: #ffffff;
+  padding: 10px;
+}
+.flink .flink-con a {
+  display: inline-block;
+  padding: 2px 10px;
+  color: #444444;
+  font-size: 12px;
+  line-height: 26px;
+}
+.flink .flink-con a:hover {
+  color: #135eba;
+  text-decoration: underline;
+}
+.foot {
+  width: 100%;
+  height: 80px;
+  padding-top: 20px;
+  background: #2c86d5;
+}
+.foot p {
+  font-size: 12px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+.index-file-column {
+  width: 195px;
+  height: 280px;
+  float: right;
+  border: 1px solid #ededed;
+}
+.index-file-column .file-list {
+  padding: 10px 5px;
+  display: block;
+}
+.index-file-column .file-list a {
+  width: 100%;
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  position: relative;
+  border-bottom: 1px dashed #ededed;
+}
+.index-file-column .file-list a .title {
+  color: #444444;
+  width: 140px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  height: 28px;
+  line-height: 28px;
+}
+.index-file-column .file-list a .down {
+  color: #135eba;
+  width: 30px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  height: 28px;
+  line-height: 28px;
+}
+.page-contain {
+  margin-bottom: 15px;
+}
+.contain-menu {
+  width: 200px;
+  float: left;
+  border: 1px solid #ededed;
+}
+.contain-menu .column-list {
+  padding: 10px;
+  background: #ffffff;
+}
+.contain-menu .column-list li {
+  width: 100%;
+  display: block;
+  height: 40px;
+  border-bottom: 1px solid #ededed;
+}
+.contain-menu .column-list li a {
+  width: 100%;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 20px;
+  font-size: 14px;
+  color: #444444;
+  border-left: 4px solid #ffffff;
+}
+.contain-menu .column-list li a:hover {
+  border-left: 4px solid #4193f7;
+  color: #4193f7;
+}
+.contain-body {
+  width: 785px;
+  float: right;
+}
+.contain-body .article-w {
+  padding: 10px;
+  background: #ffffff;
+}
+.contain-body .article-w .title-w {
+  padding: 30px 10px;
+  border-bottom: 2px solid #e4f0ff;
+}
+.contain-body .article-w .title-w h3 {
+  font-size: 18px;
+  color: #444444;
+  text-align: center;
+  font-weight: bold;
+}
+.contain-body .article-w .detail-w {
+  padding: 20px 0;
+}
+.contain-body .article-list {
+  line-height: 28px;
+  margin: 20px 15px;
+}
+.contain-body .article-list li {
+  font-size: 14px;
+  line-height: 28px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #ededed;
+  background: url("../../images/canlian/right-arrow.png") no-repeat left 12px;
+  text-indent: 20px;
+}
+.contain-body .article-list li a {
+  color: #444444;
+  transition: .2s;
+}
+.contain-body .article-list li a .ico {
+  font-size: 12px;
+  padding-right: 8px;
+}
+.contain-body .article-list li a:hover {
+  color: #135eba;
+  position: relative;
+  left: 1px;
+}
+.contain-body .article-list li cite {
+  color: #c1bdbd;
+  font-size: 12px;
+  padding-left: 8px;
+  font-style: normal;
+}
+.contain-body .zp-content {
+  padding: 10px;
+  background: #ffffff;
+}
+.contain-body .zp-content .applyforjob-table td {
+  padding: 4px 3px;
+}
+.contain-body .zp-content .applyforjob-table strong {
+  font-size: 14px;
+  text-align: right;
+  display: block;
+}
+.contain-body .zp-content .qzxx-table {
+  width: 100%;
+}
+.contain-body .zp-content .qzxx-table td {
+  padding: 4px 3px;
+  border: 1px solid #ccc;
+}
+.contain-body .zp-content .qzxx-table caption {
+  font-size: 18px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #1A7DAC;
+}
+.contain-body .zp-content .qzxx-table td {
+  font-size: 14px;
+  line-height: 28px;
+}
+.contain-body .zp-content .qzxx-table strong {
+  font-size: 16px;
+  text-align: right;
+  display: block;
+}

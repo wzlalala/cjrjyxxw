@@ -1,0 +1,33 @@
+
+<div class="flink">
+    <div class="container">
+        <div class="column-title">
+            <h2 class="title title2">友情链接</h2>
+        </div>
+        <div class="flink-con">
+            <!--{pc:link action="type_list" typeid="4" siteid="1" linktype="1" order="listorder DESC" num="10" return="dat"}-->
+            <!--{loop $dat $v}-->
+            <!--<a href="{$v[url]}" target="_blank">{$v[name]}</a>-->
+            <!--{/loop}-->
+            <!--{/pc}-->
+
+            {pc:link action="lists" typeid="$type_id" siteid="$siteid" linktype="0" order="desc" num="10" return="dat"}
+                {loop $dat $v}
+                <a href="{$v[url]}" title="{$v[name]}"  target="_blank">{$v[name]}</a>
+                {/loop}
+            {/pc}
+
+
+
+        </div>
+
+
+
+    </div>
+</div>
+<div class="foot">
+    <div class="container">
+        <p>版权所有：郑州市残疾人劳动就业服务中心 备案号：豫ICP备10001745号-4</p>
+        <p>河南省郑州市中原区棉纺路1号附3号</p>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+{template "content","header"}
+<div class="page-contain">
+    <div class="container clearfix">
+        <div class="contain-menu">
+            <div class="column-title">
+                <h2 class="title">网站栏目</h2>
+            </div>
+            <ul class="column-list">
+                {pc:content action="category" catid="0" num="15" siteid="$siteid" order="listorder ASC"}
+                {loop $data $r}
+                <li><a href="{$r[url]}">{$r[catname]}</a></li>
+                {/loop}
+                {/pc}
+            </ul>
+        </div>
+        <div class="contain-body">
+            <div class="column-title">
+                <h2 class="title title2">{$CATEGORYS[$catid][catname]}</h2>
+            </div>
+
+            <div class="article-w">
+                {pc:content action="lists" catid="$catid" num="25" order="id DESC" page="$page"}
+                <ul class="article-list">
+                    {loop $data $r}
+                    <li>
+                        <a href="{$r[url]}" title="{$r[title]}" target="_blank">{$r[title]}</a> <cite>{date('Y-m-d',$r[inputtime])}</cite>
+                    </li>
+                    {/loop}
+
+                </ul>
+                <div id="pages" class="text-c">{$pages}</div>
+                {/pc}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{template "content","footer"}
+</body>
+</html>
