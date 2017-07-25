@@ -460,4 +460,6 @@ $LANG['qiyezhaopin'] = '企业招聘信息';
 $LANG['cjrqqxx'] = '残疾人求职详情';
 $LANG['admin_cjrqzxx'] = '残疾人求职详情';
 $LANG['canjirenqiuzhixiangqing'] = '残疾人求职详情';
+$LANG['dwzpxx'] = '单位招聘';
+$LANG['yrdwjbxx'] = '单位招聘';
 ?>

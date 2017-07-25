@@ -15,7 +15,7 @@
 <div class="menu">
     <div class="container">
         <ul>
-            <li><a href="{siteurl($siteid)}/">网站首页</a></li>
+            <li><a href="{siteurl($siteid)}">网站首页</a></li>
             {pc:content action="category" catid="0" num="15" siteid="$siteid" order="listorder ASC"}
             {loop $data $r}
              <li><a href="{$r[url]}">{$r[catname]}</a></li>

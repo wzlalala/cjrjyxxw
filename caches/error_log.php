@@ -1012,3 +1012,9 @@
 <?php exit;?>07-23 15:12:49 | 2 | Illegal string offset 'allowmultisubmit' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 44
 <?php exit;?>07-23 15:12:49 | 2 | Illegal string offset 'allowunreg' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 48
 <?php exit;?>07-23 15:12:49 | 2 | Illegal string offset 'allowunreg' | phpcms\modules\formguide\templates\formguide_add.tpl.php | 49
+<?php exit;?>07-25 11:16:12 | 2 | include(D:\xampp\htdocs\cjrjyxxw\phpcms\modules\yrdwjbxx\templates\applyforjob_edit.tpl.php): failed to open stream: No such file or directory | phpcms\modules\yrdwjbxx\admin_yrdwjbxx.php | 78
+<?php exit;?>07-25 11:16:12 | 2 | include(): Failed opening 'D:\xampp\htdocs\cjrjyxxw\phpcms\modules\yrdwjbxx\templates\applyforjob_edit.tpl.php' for inclusion (include_path='.;D:\xampp\php\PEAR') | phpcms\modules\yrdwjbxx\admin_yrdwjbxx.php | 78
+<?php exit;?>07-25 11:17:15 | 2 | include(D:\xampp\htdocs\cjrjyxxw\phpcms\modules\yrdwjbxx\templates\applyforjob_edit.tpl.php): failed to open stream: No such file or directory | phpcms\modules\yrdwjbxx\admin_yrdwjbxx.php | 78
+<?php exit;?>07-25 11:17:15 | 2 | include(): Failed opening 'D:\xampp\htdocs\cjrjyxxw\phpcms\modules\yrdwjbxx\templates\applyforjob_edit.tpl.php' for inclusion (include_path='.;D:\xampp\php\PEAR') | phpcms\modules\yrdwjbxx\admin_yrdwjbxx.php | 78
+<?php exit;?>07-25 11:17:24 | 2 | include(D:\xampp\htdocs\cjrjyxxw\phpcms\modules\yrdwjbxx\templates\applyforjob_edit.tpl.php): failed to open stream: No such file or directory | phpcms\modules\yrdwjbxx\admin_yrdwjbxx.php | 78
+<?php exit;?>07-25 11:17:24 | 2 | include(): Failed opening 'D:\xampp\htdocs\cjrjyxxw\phpcms\modules\yrdwjbxx\templates\applyforjob_edit.tpl.php' for inclusion (include_path='.;D:\xampp\php\PEAR') | phpcms\modules\yrdwjbxx\admin_yrdwjbxx.php | 78

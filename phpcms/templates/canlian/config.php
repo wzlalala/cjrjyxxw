@@ -65,6 +65,12 @@
               'list_new.html' => '列表页',
               'show.html' => '残疾人求职详情页'
           ),
+      'templates|canlian|yrdwjbxx' =>
+          array (
+              'index.html' => '',
+              'list_new.html' => '列表页',
+              'show.html' => '单位招聘详情页'
+          ),
     'templates|canlian|link' =>
     array (
       'index.html' => '',
