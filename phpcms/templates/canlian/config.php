@@ -7,7 +7,7 @@
   'disable' => 0,
   'file_explan' => 
   array (
-    'templates|canlian|content' =>
+    'templates|canlian|content' => 
     array (
       'category.html' => '文章频道页',
       'category_download.html' => '下载频道页',
@@ -30,7 +30,7 @@
       'show_picture.html' => '图片内容页',
       'tag.html' => 'tag',
     ),
-    'templates|canlian|' =>
+    'templates|canlian|' => 
     array (
       'announce' => '公告',
       'comment' => '评论',
@@ -48,7 +48,7 @@
       'wap' => '手机门户',
       'yp' => '黄页模板',
     ),
-    'templates|canlian|vote' =>
+    'templates|canlian|vote' => 
     array (
       'index.html' => '',
       'list_new.html' => '列表页',
@@ -59,25 +59,25 @@
       'vote_tp_2.html' => '新闻页投票模版',
       'vote_tp_3.html' => '首页投票模版',
     ),
-      'templates|canlian|applyforjob' =>
-          array (
-              'index.html' => '',
-              'list_new.html' => '列表页',
-              'show.html' => '残疾人求职详情页'
-          ),
-      'templates|canlian|yrdwjbxx' =>
-          array (
-              'index.html' => '',
-              'list_new.html' => '列表页',
-              'show.html' => '单位招聘详情页'
-          ),
-    'templates|canlian|link' =>
+    'templates|canlian|applyforjob' => 
+    array (
+      'index.html' => '',
+      'list_new.html' => '列表页',
+      'show.html' => '残疾人求职详情页',
+    ),
+    'templates|canlian|yrdwjbxx' => 
+    array (
+      'index.html' => '',
+      'list_new.html' => '列表页',
+      'show.html' => '单位招聘详情页',
+    ),
+    'templates|canlian|link' => 
     array (
       'index.html' => '',
       'list_type.html' => '分类页',
       'register.html' => '申请页',
     ),
-    'templates|canlian|special' =>
+    'templates|canlian|special' => 
     array (
       'api_picture.html' => '组图',
       'comment.html' => '专题首页评论页',
@@ -87,7 +87,7 @@
       'show.html' => '内容页',
       'special_list.html' => '专题列表',
     ),
-    'templates|canlian|poster' =>
+    'templates|canlian|poster' => 
     array (
       'banner.html' => '矩形横幅',
       'couplet.html' => '对联广告',
@@ -98,11 +98,11 @@
       'test.html' => '',
       'text.html' => '文字广告',
     ),
-    'templates|canlian|announce' =>
+    'templates|canlian|announce' => 
     array (
       'show.html' => '内容页',
     ),
-    'templates|canlian|wap' =>
+    'templates|canlian|wap' => 
     array (
       'big_image.html' => '显示大图模板',
       'category.html' => '频道页模板',
@@ -116,14 +116,14 @@
       'min_header.html' => '小头部模板',
       'show.html' => '内容显示页模板',
     ),
-    'templates|canlian|pay' =>
+    'templates|canlian|pay' => 
     array (
       'deposit.html' => '支付页模板',
       'pay_list.html' => '支付记录页模板',
       'payment_cofirm.html' => '支付确认页模板',
       'spend_list.html' => '消费记录页模板',
     ),
-    'templates|canlian|message' =>
+    'templates|canlian|message' => 
     array (
       'group.html' => '系统消息',
       'inbox.html' => '收件箱',
@@ -133,7 +133,7 @@
       'read_only.html' => '已经发消息',
       'send.html' => '写消息',
     ),
-    'templates|canlian|member' =>
+    'templates|canlian|member' => 
     array (
       'account_manage.html' => '会员管理',
       'account_manage_avatar.html' => '头像管理',
@@ -157,28 +157,28 @@
       'protocol.html' => '注册协议',
       'register.html' => '注册页面',
     ),
-    'templates|canlian|phpsso' =>
+    'templates|canlian|phpsso' => 
     array (
       'index.html' => '首页',
     ),
-    'templates|canlian|search' =>
+    'templates|canlian|search' => 
     array (
       'footer.html' => '页尾',
       'header.html' => '页头',
       'index.html' => '首页',
       'list.html' => '列表页',
     ),
-    'templates|canlian|formguide' =>
+    'templates|canlian|formguide' => 
     array (
       'index.html' => '表单列表页模板',
       'show.html' => '表单详情页模板',
       'show_js.html' => '表单js调用模板',
     ),
-    'templates|canlian|mood' =>
+    'templates|canlian|mood' => 
     array (
       'index.html' => '新闻心情',
     ),
-    'templates|canlian|yp' =>
+    'templates|canlian|yp' => 
     array (
       'com_default' => '企业默认模板',
       'index.html' => '黄页首页模板',

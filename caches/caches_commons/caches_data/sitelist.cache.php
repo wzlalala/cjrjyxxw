@@ -12,7 +12,7 @@ return array (
     'release_point' => '',
     'default_style' => 'canlian',
     'template' => 'canlian',
-    'setting' => '{"upload_maxsize":"2048","upload_allowext":"jpg|jpeg|gif|bmp|png|doc|docx|xls|xlsx|ppt|pptx|pdf|txt|rar|zip|swf","watermark_enable":"1","watermark_minwidth":"300","watermark_minheight":"300","watermark_img":"statics\\/images\\/water\\/\\/mark.png","watermark_pct":"85","watermark_quality":"80","watermark_pos":"9"}',
+    'setting' => '{"upload_maxsize":"2048","upload_allowext":"jpg|jpeg|gif|bmp|png|doc|docx|xls|xlsx|ppt|pptx|pdf|txt|rar|zip|swf","watermark_enable":"0","watermark_minwidth":"300","watermark_minheight":"300","watermark_img":"statics\\/images\\/water\\/\\/mark.png","watermark_pct":"85","watermark_quality":"80","watermark_pos":"9"}',
     'uuid' => 'b4623fb7-cb3d-11e6-a72a-00ffafaacfb2',
     'url' => 'http://localhost/cjrjyxxw/',
   ),

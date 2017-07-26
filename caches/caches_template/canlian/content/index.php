@@ -34,7 +34,7 @@
                 </div>
                 <div class="news-list">
                     <ul>
-                    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=9fd0ea723db3d083fbfb5153124b2aca&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2819%29+order+by+id+DESC&num=7&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(19) order by id DESC LIMIT 7");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=9fd0ea723db3d083fbfb5153124b2aca&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2819%29+order+by+id+DESC&num=7&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(19) order by id DESC LIMIT 7");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                     <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                     <li>
                         <a href="<?php echo $r['url'];?>" title="<?php echo str_cut($r['title'],40);?>" target="_blank">
@@ -73,7 +73,7 @@
                 </div>
                 <div class="news-list">
                     <ul>
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=069ffb9dd2f40944562044a41f500a49&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2820%29+order+by+id+DESC&num=7&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(20) order by id DESC LIMIT 7");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=069ffb9dd2f40944562044a41f500a49&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2820%29+order+by+id+DESC&num=7&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(20) order by id DESC LIMIT 7");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                         <li>
                             <a href="<?php echo $r['url'];?>" title="<?php echo str_cut($r['title'],40);?>" target="_blank">
@@ -93,7 +93,7 @@
                 </div>
                 <div class="news-list">
                     <ul>
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=a2117f120288ac28576a3e6d981ba5d9&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2811%29+order+by+id+DESC&num=7&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(11) order by id DESC LIMIT 7");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=a2117f120288ac28576a3e6d981ba5d9&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2811%29+order+by+id+DESC&num=7&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(11) order by id DESC LIMIT 7");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                         <li>
                             <a href="<?php echo $r['url'];?>" title="<?php echo str_cut($r['title'],40);?>" target="_blank">
@@ -131,7 +131,7 @@
                 <div class="news-list">
                     <dl class="img-list">
                         <dt><span class="img"><img src="<?php echo $CATEGORYS['12']['image'];?>" alt=""></span></dt>
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=decc1ed03a63eb1db7a65543fa6302ec&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2812%29+and+posids+in%281%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(12) and posids in(1) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=decc1ed03a63eb1db7a65543fa6302ec&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2812%29+and+posids+in%281%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(12) and posids in(1) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                         <dd>
                             <a href="<?php echo $r['url'];?>" title="<?php echo str_cut($r['title'],40);?>" target="_blank">
@@ -142,7 +142,7 @@
                         <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                     </dl>
                     <ul>
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=ba8b47ae12ffc615b1dce94517037331&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2812%29+and+posids+in%280%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(12) and posids in(0) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=ba8b47ae12ffc615b1dce94517037331&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2812%29+and+posids+in%280%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(12) and posids in(0) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                         <li>
                             <a href="<?php echo $r['url'];?>" title="<?php echo str_cut($r['title'],40);?>" target="_blank">
@@ -164,7 +164,7 @@
                 <div class="news-list">
                     <dl class="img-list">
                         <dt><span class="img"><img src="<?php echo $CATEGORYS['13']['image'];?>" alt=""></span></dt>
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=d07e638013a36899933bfde9cde1eed9&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2813%29+and+posids+in%281%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(13) and posids in(1) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=d07e638013a36899933bfde9cde1eed9&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2813%29+and+posids+in%281%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(13) and posids in(1) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                         <dd>
                             <a href="<?php echo $r['url'];?>" title="<?php echo str_cut($r['title'],40);?>" target="_blank">
@@ -175,7 +175,7 @@
                         <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                     </dl>
                     <ul>
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=21e6d08ebca2b97026a5b8d1e66bdfe0&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2813%29+and+posids+in%280%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(13) and posids in(0) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=21e6d08ebca2b97026a5b8d1e66bdfe0&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2813%29+and+posids+in%280%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(13) and posids in(0) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                         <li>
                             <a href="<?php echo $r['url'];?>" title="<?php echo str_cut($r['title'],40);?>" target="_blank">
@@ -220,7 +220,7 @@
                 <div class="news-list">
                     <dl class="img-list">
                         <dt><span class="img"><img src="<?php echo $CATEGORYS['14']['image'];?>" alt=""></span></dt>
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=85a9098b98e6b4b24baf9fe57a060e86&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2814%29+and+posids+in%281%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(14) and posids in(1) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=85a9098b98e6b4b24baf9fe57a060e86&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2814%29+and+posids+in%281%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(14) and posids in(1) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                         <dd>
                             <a href="<?php echo $r['url'];?>" title="<?php echo str_cut($r['title'],40);?>" target="_blank">
@@ -231,7 +231,7 @@
                         <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                     </dl>
                     <ul>
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=f772a71929edf01b22e507b12e747f80&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2814%29+and+posids+in%280%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(14) and posids in(0) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=f772a71929edf01b22e507b12e747f80&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2814%29+and+posids+in%280%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(14) and posids in(0) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                         <li>
                             <a href="<?php echo $r['url'];?>" title="<?php echo str_cut($r['title'],40);?>" target="_blank">
@@ -253,7 +253,7 @@
                 <div class="news-list">
                     <dl class="img-list">
                         <dt><span class="img"><img src="<?php echo $CATEGORYS['15']['image'];?>" alt=""></span></dt>
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=559971f7389f485ae07461b250872033&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2815%29+and+posids+in%281%29+order+by+id+DESC&num=3&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(15) and posids in(1) order by id DESC LIMIT 3");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=559971f7389f485ae07461b250872033&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2815%29+and+posids+in%281%29+order+by+id+DESC&num=3&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(15) and posids in(1) order by id DESC LIMIT 3");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                         <dd>
                             <a href="<?php echo $r['url'];?>" title="<?php echo str_cut($r['title'],40);?>" target="_blank">
@@ -264,7 +264,7 @@
                         <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                     </dl>
                     <ul>
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=f1c729c6518493be4387f04ac26cc223&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2815%29+and+posids+in%280%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(15) and posids in(0) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=f1c729c6518493be4387f04ac26cc223&sql=SELECT+%2A+from+v9_news+where+status%3D99+and+catid+in%2815%29+and+posids+in%280%29+order+by+id+DESC&num=2&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("SELECT * from v9_news where status=99 and catid in(15) and posids in(0) order by id DESC LIMIT 2");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                         <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                         <li>
                             <a href="<?php echo $r['url'];?>" title="<?php echo str_cut($r['title'],40);?>" target="_blank">
@@ -314,7 +314,7 @@
                         <span class="zhiwei">欲求职位</span>
                         <span class="time">创建时间</span>
                     </dt>
-                    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=0621cf4b5d42002a6379f9b8cd0337cb&sql=select+%2A+from+v9_cjrjbxx%2Cv9_cjrqzxx++where+v9_cjrjbxx.id%3Dv9_cjrqzxx.cjrid+and+v9_cjrqzxx.sfyx+%3D+%270%27+and+v9_cjrqzxx.scbj%3D%270%27+order+by+v9_cjrqzxx.xgsj+DESC&num=10&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from v9_cjrjbxx,v9_cjrqzxx  where v9_cjrjbxx.id=v9_cjrqzxx.cjrid and v9_cjrqzxx.sfyx = '0' and v9_cjrqzxx.scbj='0' order by v9_cjrqzxx.xgsj DESC LIMIT 10");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=0621cf4b5d42002a6379f9b8cd0337cb&sql=select+%2A+from+v9_cjrjbxx%2Cv9_cjrqzxx++where+v9_cjrjbxx.id%3Dv9_cjrqzxx.cjrid+and+v9_cjrqzxx.sfyx+%3D+%270%27+and+v9_cjrqzxx.scbj%3D%270%27+order+by+v9_cjrqzxx.xgsj+DESC&num=10&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from v9_cjrjbxx,v9_cjrqzxx  where v9_cjrjbxx.id=v9_cjrqzxx.cjrid and v9_cjrqzxx.sfyx = '0' and v9_cjrqzxx.scbj='0' order by v9_cjrqzxx.xgsj DESC LIMIT 10");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                     <?php
                   foreach ($data as $k=>$v){
                         $data[$k]['xm'] = substr_cut($data[$k]['xm']);
@@ -375,7 +375,7 @@
                         <span class="ly">所属残联</span>
                         <span class="fbsj">发布时间</span>
                     </dt>
-                    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=c7506873b96d252535f57cadb0a3297e&sql=select+%2A+from+v9_yrdwjbxx%2Cv9_dwzpxx++where+v9_yrdwjbxx.id%3Dv9_dwzpxx.yrdwid+and+v9_dwzpxx.sfyx+%3D+%270%27+and+v9_dwzpxx.scbj%3D%270%27+order+by+v9_dwzpxx.cjsj+DESC&num=10&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from v9_yrdwjbxx,v9_dwzpxx  where v9_yrdwjbxx.id=v9_dwzpxx.yrdwid and v9_dwzpxx.sfyx = '0' and v9_dwzpxx.scbj='0' order by v9_dwzpxx.cjsj DESC LIMIT 10");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=c7506873b96d252535f57cadb0a3297e&sql=select+%2A+from+v9_yrdwjbxx%2Cv9_dwzpxx++where+v9_yrdwjbxx.id%3Dv9_dwzpxx.yrdwid+and+v9_dwzpxx.sfyx+%3D+%270%27+and+v9_dwzpxx.scbj%3D%270%27+order+by+v9_dwzpxx.cjsj+DESC&num=10&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from v9_yrdwjbxx,v9_dwzpxx  where v9_yrdwjbxx.id=v9_dwzpxx.yrdwid and v9_dwzpxx.sfyx = '0' and v9_dwzpxx.scbj='0' order by v9_dwzpxx.cjsj DESC LIMIT 10");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
                     <?php $n=1;if(is_array($data)) foreach($data AS $r) { ?>
                     <dd>
                         <a href="?m=yrdwjbxx&c=index&a=show&id=<?php echo $r['id']?>&yrdwid=<?php echo $r['yrdwid']?>">
